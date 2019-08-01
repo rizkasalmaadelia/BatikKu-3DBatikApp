@@ -39,7 +39,7 @@ public class CelanaActivity extends AppCompatActivity {
         });
 
         // isi url
-        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu/celana1.php");
+        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu/celana/celana1.php");
 
         // set view
         setContentView(webViewSaya);

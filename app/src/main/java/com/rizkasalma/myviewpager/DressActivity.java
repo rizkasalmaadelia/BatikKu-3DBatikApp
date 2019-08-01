@@ -39,7 +39,7 @@ public class DressActivity extends AppCompatActivity {
         });
 
         // isi url
-        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu/dress1.php");
+        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu/dress/dress1.php");
 
         // set view
         setContentView(webViewSaya);

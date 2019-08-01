@@ -40,7 +40,7 @@ public class KemejaActivity extends AppCompatActivity {
         });
 
         // isi url
-        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu/batik2.php");
+        webViewSaya.loadUrl("http://sarjanalidi.com/batiqu//kerah/kmj.php");
 
         // set view
         setContentView(webViewSaya);

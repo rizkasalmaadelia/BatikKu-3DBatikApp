@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(), JatengActivity.class);
+                Intent i = new Intent(getApplicationContext(), KemejaActivity.class);
                 startActivity(i);
             }
         });
