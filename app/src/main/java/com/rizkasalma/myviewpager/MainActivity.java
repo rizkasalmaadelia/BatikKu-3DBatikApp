@@ -19,9 +19,14 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     ImageView imageViewJateng;
     ImageView imageViewJabar;
+    ImageView imageViewJatim;
     ImageView see_all;
     TabLayout tabIndicator;
     ImageButton buttonBaju;
+    ImageButton buttonKemeja;
+    ImageButton buttonDress;
+    ImageButton buttonCelana;
+
     int images[] = {R.drawable.mostfixbanner1, R.drawable.fixbanner2, R.drawable.fixbanner3};
     MyCustomPagerAdapter myCustomPagerAdapter;
 
@@ -34,11 +39,13 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager)findViewById(R.id.viewPager);
 
         imageViewJateng = findViewById(R.id.image1);
+        imageViewJatim = findViewById(R.id.image2);
         imageViewJabar = findViewById(R.id.image3);
         see_all= findViewById(R.id.image4);
         buttonBaju = findViewById(R.id.buttonBaju);
-
-
+        buttonKemeja = findViewById(R.id.buttonKemeja);
+        buttonDress = findViewById(R.id.buttonDress);
+        buttonCelana = findViewById(R.id.buttonCelana);
 
 
         myCustomPagerAdapter = new MyCustomPagerAdapter(MainActivity.this, images);
@@ -55,20 +62,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        imageViewJabar.setOnClickListener(new View.OnClickListener() {
-
+        imageViewJatim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(), JabarActivity.class);
+                Intent i = new Intent(getApplicationContext(), JatengActivity.class);
+                startActivity(i);
+            }
+        });
+        buttonKemeja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), JatengActivity.class);
+                startActivity(i);
+            }
+        });
+        imageViewJabar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), JatengActivity.class);
                 startActivity(i);
             }
         });
         see_all.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-
                 Intent i = new Intent(getApplicationContext(), SeeAllActivity.class);
                 startActivity(i);
             }
@@ -79,6 +99,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent i = new Intent(getApplicationContext(), KaosActivity.class);
+                startActivity(i);
+            }
+        });
+        buttonDress.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), DressActivity.class);
+                startActivity(i);
+            }
+        });
+        buttonCelana.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), CelanaActivity.class);
                 startActivity(i);
             }
         });
