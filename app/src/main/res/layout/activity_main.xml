@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="15dp"
+    android:background="@color/white"
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,13 +13,13 @@
 
     <ImageView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/title"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:src="@drawable/title12"
         android:padding="5dp"
         android:layout_marginLeft="5dp"
         android:layout_alignParentStart="true"
-
+        android:layout_marginBottom="25dp"
         />
     <RelativeLayout
         android:layout_width="match_parent"
@@ -54,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/RL"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/textmodel"
         android:textColor="@color/blackText"
         android:textSize="20sp" />
@@ -62,7 +64,7 @@
         <LinearLayout
             android:id="@+id/RL1"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:layout_below="@id/Textmodel"
             android:layout_marginTop="-2dp"
             android:layout_weight="1.0">
@@ -76,7 +78,7 @@
                     android:id="@+id/buttonBaju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/rectangle"
                     android:src="@drawable/logobaju" />
 
@@ -86,7 +88,7 @@
                     android:layout_below="@id/buttonBaju"
                     android:layout_centerInParent="true"
                     android:text="@string/kaos"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -100,7 +102,7 @@
                     android:id="@+id/buttonKemeja"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/rectangle2"
                     android:src="@drawable/logokemeja" />
 
@@ -110,7 +112,7 @@
                     android:layout_below="@+id/buttonKemeja"
                     android:layout_centerInParent="true"
                     android:text="@string/kemeja"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -123,7 +125,7 @@
                     android:id="@+id/buttonDress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/rectangle3"
                     android:src="@drawable/logodress"
 
@@ -135,7 +137,7 @@
                     android:layout_below="@id/buttonDress"
                     android:layout_centerInParent="true"
                     android:text="@string/dress"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -147,7 +149,7 @@
                     android:id="@+id/buttonCelana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/rectangle4"
                     android:src="@drawable/logocelana" />
 
@@ -157,7 +159,7 @@
                     android:layout_below="@+id/buttonCelana"
                     android:layout_centerInParent="true"
                     android:text="@string/celana"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
         </LinearLayout>
     <TextView
@@ -165,7 +167,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/RL1"
-        android:layout_marginTop="-1dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/daerah_batik"
         android:textStyle="bold"
         android:textColor="@color/blackText"

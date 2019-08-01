@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
+    android:background="@color/white"
     tools:context=".JatengActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/white"
-        android:src="@drawable/button_back"/>
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
     <TextView
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -58,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:src="@drawable/purbalingga"
+            android:src="@drawable/solo"
             android:adjustViewBounds="true"
             />
         <ImageView
@@ -67,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:src="@drawable/purwokerto"
+            android:src="@drawable/jogja"
             android:adjustViewBounds="true"
             />
         <ImageView
@@ -75,7 +76,7 @@
             android:layout_below="@id/daerah2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/kudus"
+            android:src="@drawable/papua"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             />
@@ -84,7 +85,7 @@
             android:layout_below="@id/daerah3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/jogja"
+            android:src="@drawable/surabaya"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             />
@@ -93,7 +94,16 @@
             android:layout_below="@id/daerah4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/tegal2"
+            android:src="@drawable/purwokerto"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            />
+        <ImageView
+            android:id="@+id/daerah6"
+            android:layout_below="@id/daerah5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kudus"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             />

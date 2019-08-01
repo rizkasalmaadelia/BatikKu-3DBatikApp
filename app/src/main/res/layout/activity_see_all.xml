@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
     tools:context=".SeeAllActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/lihat_semua_daerah"
+                android:textColor="@color/blackText"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/main_rl"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image1"
+        />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image2"
+        android:layout_below="@id/image1"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"/>
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image3"
+        android:layout_below="@id/image2"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagea1"
+            android:layout_below="@id/image3"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"/>
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagea2"
+            android:layout_below="@id/image4"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"/>
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagea3"
+            android:layout_below="@id/image5"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
