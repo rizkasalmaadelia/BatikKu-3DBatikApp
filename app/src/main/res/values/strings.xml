@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">MyViewPager</string>
+    <string name="app_name">BatikKu.</string>
+    <string name="textmodel">3D Model</string>
+    <string name="daerah_batik">Daerah Batik</string>
+    <string name="kaos">Kaos</string>
+    <string name="celana">Celana</string>
+    <string name="kemeja">Kemeja</string>
+    <string name="dress">Dress</string>
+    <string name="pilih_motif_batik">Pilih Motif Batik</string>
 </resources>

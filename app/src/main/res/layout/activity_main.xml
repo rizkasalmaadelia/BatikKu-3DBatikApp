@@ -1,32 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
+    android:padding="15dp"
     tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:padding="5dp"
-            android:id="@+id/viewPager"/>
-
-    <android.support.design.widget.TabLayout
-        app:tabBackground="@drawable/indicator_selector"
-        android:id="@+id/tab_indicator"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@+id/viewPager"
-        >
+        android:src="@drawable/title"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentStart="true"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/RL"
+        android:layout_below="@+id/title">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="5dp" />
+        <android.support.design.widget.TabLayout
+            app:tabBackground="@drawable/indicator_selector"
+            android:id="@+id/tab_indicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/viewPager"
+            >
 
 
-    </android.support.design.widget.TabLayout>
+        </android.support.design.widget.TabLayout>
 
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Textmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="@string/textmodel"
+        android:textColor="@color/blackText"
+        android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/RL1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/Textmodel"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageButton
+                    android:id="@+id/buttonBaju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rectangle"
+                    android:src="@drawable/logobaju" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buttonBaju"
+                    android:layout_centerInParent="true"
+                    android:text="@string/kaos"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/buttonKemeja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rectangle2"
+                    android:src="@drawable/logokemeja" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonKemeja"
+                    android:layout_centerInParent="true"
+                    android:text="@string/kemeja"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                >
+
+                <ImageButton
+                    android:id="@+id/buttonDress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rectangle3"
+                    android:src="@drawable/logodress"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buttonDress"
+                    android:layout_centerInParent="true"
+                    android:text="@string/dress"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageButton
+                    android:id="@+id/buttonCelana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rectangle4"
+                    android:src="@drawable/logocelana" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonCelana"
+                    android:layout_centerInParent="true"
+                    android:text="@string/celana"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/TextDaerah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL1"
+        android:layout_marginTop="-1dp"
+        android:text="@string/daerah_batik"
+        android:textStyle="bold"
+        android:textColor="@color/blackText"
+        android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextDaerah"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image1" />
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image2"
+                android:layout_below="@id/image1"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"/>
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image3"
+                android:layout_below="@id/image2"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"/>
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_all"
+                android:layout_below="@id/image3"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
 
